@@ -1,15 +1,16 @@
-import { useState } from 'react';
+import header from "./header/header";
+import footer from "./footer/footer";
 import './App.css';
 
-const App = () => {
+import { useState } from 'react';
+
+function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      
     </div>
   );
-};
+}
 
 export default App;
