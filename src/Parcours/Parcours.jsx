@@ -222,6 +222,7 @@ const Parcours = () => {
     //  FIN CODE JS 
     return (
         <div className="parcours-animation">
+            <Fromage />
             <p className="indicator">
                 <span>Scroll</span>
                 <span>↓</span>

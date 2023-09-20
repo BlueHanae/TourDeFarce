@@ -8,14 +8,13 @@
 body {
 	font-family: 'Judson', serif;
 	background: linear-gradient(to bottom,
-     rgba(206, 228, 243, 1),     /* Bleu profond */
-    // rgba(255, 255, 255, 1), /* Blanc */
-    // rgba(239, 65, 53, 1),   /* Rouge */
-    // rgba(216, 216, 216, 1), /* Blanc légèrement grisâtre */
-    // rgba(204, 57, 46, 1),   /* Rouge sombre */
-    // rgba(186, 186, 186, 1), /* Gris clair */
-    // rgba(153, 153, 153, 1), /* Gris moyen */
-    // rgba(179, 51, 39, 1),   /* Rouge plus sombre */
+    rgba(189, 219, 239, 1),   /* Bleu ciel */
+    rgba(239, 65, 53, 1),   /* Rouge */
+     rgba(216, 216, 216, 1), /* Blanc légèrement grisâtre */
+     rgba(204, 57, 46, 1),   /* Rouge sombre */
+    rgba(186, 186, 186, 1), /* Gris clair */
+     rgba(153, 153, 153, 1), /* Gris moyen */
+     rgba(179, 51, 39, 1),   /* Rouge plus sombre */
     );
 	max-width: 100vw;
 	min-height: 100vh;

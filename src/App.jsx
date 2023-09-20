@@ -1,11 +1,9 @@
 
+import Loader from './Loader/Loader';
 import Footer from "./footer/footer";
 import Parcours from './Parcours/Parcours';
-import Loader from './Loader/Loader';
 
 import './App.scss';
-
-
 
 import { useState } from 'react';
 
