@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import "../Loader/Loader.scss";
+import croissant from "../assets/croissant.png"
 
 function Loader() {
 
     return (
       <div className="loader">
-        <img src="src/assets/croissant.png" width="1OO" height="1rem" alt="image de croissant"/>
+        <img src={croissant} width="100px" height="100px" alt="image de croissant"/>
       </div >
     );
   }
