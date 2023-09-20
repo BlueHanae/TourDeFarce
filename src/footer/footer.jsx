@@ -1,3 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './footer.scss';
+import frMessages from '../Frmessages/frmessages';
 
-export default footer;
+const Footer = () => {
+    return (
+        <footer className="tourdefarce-footer">
+            <div className="footer-content">
+                <p>{frMessages.footer.copyright}</p>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
