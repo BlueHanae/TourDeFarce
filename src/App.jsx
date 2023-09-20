@@ -13,9 +13,9 @@ import { useState } from 'react';
 function App() {
   return (
     <div className="App">
+      <Loader />
       <Header />
       <Parcours />
-      <Loader />
       <Footer />
     </div>
   );
