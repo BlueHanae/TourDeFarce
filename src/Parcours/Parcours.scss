@@ -8,7 +8,7 @@
 body {
 	font-family: 'Judson', serif;
 	background: linear-gradient(to bottom,
-    // rgba(0, 85, 164, 1),     /* Bleu profond */
+     rgba(206, 228, 243, 1),     /* Bleu profond */
     // rgba(255, 255, 255, 1), /* Blanc */
     // rgba(239, 65, 53, 1),   /* Rouge */
     // rgba(216, 216, 216, 1), /* Blanc légèrement grisâtre */
@@ -85,7 +85,6 @@ body {
 	pointer-events: none;
 	-webkit-mask-image: var(--mask);
 	mask-image: var(--mask);
-	z-index: 2;
 }
 
 .fish {

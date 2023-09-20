@@ -1,5 +1,4 @@
 
-import Header from "./header/header";
 import Footer from "./footer/footer";
 import Parcours from './Parcours/Parcours';
 import Loader from './Loader/Loader';
@@ -14,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      <Header />
       <Parcours />
       <Footer />
     </div>
