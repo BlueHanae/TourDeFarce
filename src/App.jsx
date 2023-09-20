@@ -13,6 +13,8 @@ function App() {
     <div className="App">
       <Header />
       <Parcours />
+      <Loader />
+      <Header />
       <Footer />
     </div>
   );
