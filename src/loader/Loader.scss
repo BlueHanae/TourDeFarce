@@ -1,8 +1,45 @@
+@import '../var.scss';
+
+/* styles.css */
 .loader {
+    z-index: 100;
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #4e9ad0ff;
+    background-color: $celestial-blue;
     justify-content: center;
     align-items: center;
+    transform-origin: top;
+    animation: none;
 }
+.loader.disappear {
+    animation: disappear 0.5s 1.5s;
+  }
+  @keyframes disappear {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0);
+    }
+  
+}
+
+.displayNone {
+    display: none;
+  }
+  
+
+.croissant {
+    animation: rotate 1s linear infinite; 
+}
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
