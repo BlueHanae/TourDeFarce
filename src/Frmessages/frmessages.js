@@ -6,6 +6,9 @@ const frMessages = {
         cliches: "Clichés",
         contact: "Contact",
     },
+    footer: {
+        copyright: "© 2023 TourDeFarce. Aucun droit réservés.",
+    },
 };
 
 export default frMessages;
