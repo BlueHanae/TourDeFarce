@@ -14,7 +14,6 @@ function App() {
       <Header />
       <Parcours />
       <Loader />
-      <Header />
       <Footer />
     </div>
   );
