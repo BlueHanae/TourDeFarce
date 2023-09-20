@@ -11,8 +11,8 @@ import { useState } from 'react';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Loader />
+      <Header />
       <Footer />
     </div>
   );
