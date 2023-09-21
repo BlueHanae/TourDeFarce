@@ -39,4 +39,40 @@
           height: auto;
         }
       }
+      /* App.scss */
+
+      /* Définir l'animation */
+      .oscillate {
+        animation: oscillate 0.8s linear infinite; /* Répéter l'animation indéfiniment */
+      }
+      @keyframes oscillate {
+        0% {
+          transform: translateX(0) rotate(0deg); /* Aucun déplacement horizontal ni d'inclinaison */
+        }
+        50% {
+          transform: translateX(20px) rotate(15deg); /* Déplacement vers la droite avec inclinaison */
+        }
+        100% {
+          transform: translateX(0) rotate(0deg); /* Revenir à la position initiale */
+        }
+      }
+
+      .billet {
+        animation: billet 0.5s linear infinite; /* Répéter l'animation indéfiniment */
+      }
+      @keyframes billet {
+        0% {
+          transform: translateX(0) rotate(0deg); /* Aucun déplacement horizontal ni d'inclinaison */
+        }
+        50% {
+          transform: translateX(0px) rotate(20deg); /* Déplacement vers la droite avec inclinaison */
+        }
+        100% {
+          transform: translateX(0) rotate(0deg); /* Revenir à la position initiale */
+        }
+      }
+      
+/* Appliquer l'animation à l'élément avec la classe "oscillate" */
+
+
     }

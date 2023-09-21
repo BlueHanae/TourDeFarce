@@ -12,11 +12,11 @@ const TourEiffelScene = () => {
 
   return (
     <div className="tour-eiffel-scene">
-      <div className="billet">
+      <div className="oscilB billet">
         <img src={billetImg} alt="Billet" />
       </div>
       <div className="serge">
-        <img src={gainsbourgImg} alt="Serge Gainsbourg" />
+        <img className='sergeG oscillate' src={gainsbourgImg} alt="Serge Gainsbourg" />
         <div className="text-bubble">
           Moi c'est Serge Gainsbarre ! Bienvenue au Tour de Farce.
         </div>
