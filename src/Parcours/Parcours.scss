@@ -442,27 +442,3 @@ section {
 		transform: translate3d(0, 0.5rem, 0);
 	}
 }
-
-// TOUR EIFFEIL :
-.tour-eiffel-scene {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.eiffel, .tree {
-    position: absolute;
-}
-
-.eiffel {
-    bottom: 0;
-    
-}
-
-.tree {
-    left: 10%;
-   
-}
