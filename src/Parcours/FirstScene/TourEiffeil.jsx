@@ -1,7 +1,7 @@
-import gainsbourgImg from '../../assets/gainsbourg.png';
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-
+import gainsbourgImg from '../../assets/gainsbourg.png';
+import billetImg from '../../assets/billet.png';
 import './TourEiffeil.scss';
 
 const TourEiffelScene = () => {
@@ -12,10 +12,13 @@ const TourEiffelScene = () => {
 
   return (
     <div className="tour-eiffel-scene">
+      <div className="billet">
+        <img src={billetImg} alt="Billet" />
+      </div>
       <div className="serge">
         <img src={gainsbourgImg} alt="Serge Gainsbourg" />
         <div className="text-bubble">
-        Moi c'est Serge Gainsbarre ! Bienvenue au Tour de Farce.
+          Moi c'est Serge Gainsbarre ! Bienvenue au Tour de Farce.
         </div>
       </div>
     </div>

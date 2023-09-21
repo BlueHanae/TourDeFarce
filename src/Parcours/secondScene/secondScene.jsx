@@ -1,8 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama'; 
 import sceneParis from "../../assets/scene1.jpeg"
-
 
 const SecondScene = () => {
   const [stepData, setStepData] = useState({
@@ -27,15 +25,18 @@ const SecondScene = () => {
         {stepData.steps.map(step => (
           <Step key={step.id} data={step.id}>
             <div className="content">
-              <img className='imgParis'
-                src={sceneParis}
-                alt="peinture scene parisienne"
-                style={{
-                  transform: `translateX(${stepData.currentStep === step.id ? 0 : -100}%)`,
-                  opacity: stepData.currentStep === step.id ? 1 : 0,
-                  transition: 'transform 1s, opacity 1s',
-                }}
-              />
+              {/* Afficher l'image uniquement pour l'étape 'start' */}
+              {step.id === 'start' && (
+                <img className='imgParis'
+                  src={sceneParis}
+                  alt="peinture scene parisienne"
+                  style={{
+                    transform: `translateX(${stepData.currentStep === step.id ? 0 : -100}%)`,
+                    opacity: stepData.currentStep === step.id ? 1 : 0,
+                    transition: 'transform 1s, opacity 1s',
+                  }}
+                />
+              )}
             </div>
           </Step>
         ))}
