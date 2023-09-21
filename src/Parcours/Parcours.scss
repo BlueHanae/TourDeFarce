@@ -84,11 +84,11 @@ body {
 	pointer-events: none;
 	-webkit-mask-image: var(--mask);
 	mask-image: var(--mask);
+	z-index: 10;
 }
 
 .fish {
         --size: 10rem;
-      
         position: relative;
         width: var(--size);
         height: var(--size);
@@ -441,4 +441,31 @@ section {
 	to {
 		transform: translate3d(0, 0.5rem, 0);
 	}
+}
+
+// TOUR EIFFEIL :
+.tour-eiffel-scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eiffel, .tree {
+    position: absolute;
+}
+
+.eiffel {
+    bottom: 0;
+    
+}
+
+.tree {
+    left: 10%;
+   
+}
+.imgParis {
+	width: 100vw;
 }
