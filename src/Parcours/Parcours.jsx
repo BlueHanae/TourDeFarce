@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import Fromage from './Fromage/Fromage';
+import TourEiffelScene from './/FirstScene/TourEiffeil';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -54,25 +55,6 @@ const Parcours = () => {
             ]
         const lights = [...document.querySelectorAll('[data-lights]')]
         const rays = document.querySelector('[data-rays]')
-
-        const bubbles = gsap.timeline()
-        bubbles.set('.bubbles__bubble', {
-            y: 100,
-        })
-        bubbles.to('.bubbles__bubble', {
-            scale: 1.2,
-            y: -300,
-            opacity: 1,
-            duration: 2,
-            stagger: 0.2,
-        })
-        bubbles.to('.bubbles__bubble', {
-            scale: 1,
-            opacity: 0,
-            duration: 1,
-        }, '-=1')
-
-        bubbles.pause()
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -136,8 +118,6 @@ const Parcours = () => {
             duration: 1
         }, '-=1')
 
-        bubbles.play()
-        tl.pause()
 
         const lightsTl = gsap.timeline({
             scrollTrigger: {
@@ -157,22 +137,6 @@ const Parcours = () => {
             duration: 80
         }, '-=5')
 
-        const makeBubbles = (p, i) => {
-            const { top, left } = fish.getBoundingClientRect()
-            gsap.to(p, { opacity: 1, duration: 1 })
-            gsap.set('.bubbles', {
-                x: left,
-                y: top
-            })
-            if (bubbles.paused) {
-                bubbles.restart()
-            }
-            if (i > 6) {
-                gsap.to('.bubbles', {
-                    opacity: 0
-                })
-            }
-        }
 
         const rotateFish = (self) => {
             if (self.direction === -1) {
@@ -188,7 +152,7 @@ const Parcours = () => {
 
         sections.forEach((section, i) => {
             const p = section.querySelector('p')
-            gsap.to(p, { opacity: 0 })
+            gsap.to(p, { opacity: 0 }),
 
             ScrollTrigger.create({
                 trigger: section,
@@ -222,7 +186,7 @@ const Parcours = () => {
     //  FIN CODE JS 
     return (
         <div className="parcours-animation">
-            <Fromage />
+        <TourEiffelScene />
             <p className="indicator">
                 <span>Scroll</span>
                 <span>↓</span>
@@ -278,7 +242,6 @@ const Parcours = () => {
                 <section>
                     <Fromage />
                 </section>
-
 
                 <section>
                     <div class="section__content">
