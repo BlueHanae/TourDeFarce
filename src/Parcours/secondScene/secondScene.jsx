@@ -1,15 +1,14 @@
 import React from 'react';
 import jocondePopArt from "../../assets/jocondePopArt.jpeg"
 
-const secondScene = () => {
+const SecondScene = () => {
   return (
     <section>
-      <div className="section__content">
-        <p>fderzfzefazfzer</p>
+      <div className="content">
         <img src={jocondePopArt} alt="imade de la joconde" />
       </div>
     </section>
   );
 }
 
-export default secondScene;
+export default SecondScene;

@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import Fromage from './Fromage/Fromage';
-import secondScene from './secondScene/secondScene';
+import SecondScene from './SecondScene/SecondScene';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -276,8 +276,9 @@ const Parcours = () => {
             </div>
                     {/* SECTIONS A METTRE */}
             <div class="content">
+                
                 <section>
-                   <secondScene />
+                    <SecondScene />                  
                 </section>
 
 
