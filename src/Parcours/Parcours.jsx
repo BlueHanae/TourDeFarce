@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import Fromage from './Fromage/Fromage';
+import TourEiffelScene from './/FirstScene/TourEiffeil';
+import SecondScene from './SecondScene/SecondScene';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -54,25 +56,6 @@ const Parcours = () => {
             ]
         const lights = [...document.querySelectorAll('[data-lights]')]
         const rays = document.querySelector('[data-rays]')
-
-        const bubbles = gsap.timeline()
-        bubbles.set('.bubbles__bubble', {
-            y: 100,
-        })
-        bubbles.to('.bubbles__bubble', {
-            scale: 1.2,
-            y: -300,
-            opacity: 1,
-            duration: 2,
-            stagger: 0.2,
-        })
-        bubbles.to('.bubbles__bubble', {
-            scale: 1,
-            opacity: 0,
-            duration: 1,
-        }, '-=1')
-
-        bubbles.pause()
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -136,8 +119,6 @@ const Parcours = () => {
             duration: 1
         }, '-=1')
 
-        bubbles.play()
-        tl.pause()
 
         const lightsTl = gsap.timeline({
             scrollTrigger: {
@@ -157,22 +138,6 @@ const Parcours = () => {
             duration: 80
         }, '-=5')
 
-        const makeBubbles = (p, i) => {
-            const { top, left } = fish.getBoundingClientRect()
-            gsap.to(p, { opacity: 1, duration: 1 })
-            gsap.set('.bubbles', {
-                x: left,
-                y: top
-            })
-            if (bubbles.paused) {
-                bubbles.restart()
-            }
-            if (i > 6) {
-                gsap.to('.bubbles', {
-                    opacity: 0
-                })
-            }
-        }
 
         const rotateFish = (self) => {
             if (self.direction === -1) {
@@ -188,33 +153,33 @@ const Parcours = () => {
 
         sections.forEach((section, i) => {
             const p = section.querySelector('p')
-            gsap.to(p, { opacity: 0 })
+            gsap.to(p, { opacity: 0 }),
 
-            ScrollTrigger.create({
-                trigger: section,
-                start: "top top",
-                onEnter: () => makeBubbles(p, i),
-                onEnterBack: () => {
-                    if (i <= 6) {
-                        gsap.to('.bubbles', {
-                            opacity: 1
-                        })
-                    }
-                },
-                onLeave: () => {
-                    hideText(p)
-                    if (i == 0) {
-                        gsap.to('.rays', {
-                            opacity: 0,
-                            y: -500,
-                            duration: 8,
-                            ease: 'power4.in'
-                        })
-                    }
-                },
-                onLeaveBack: () => hideText(p),
-                onUpdate: (self) => rotateFish(self)
-            })
+                ScrollTrigger.create({
+                    trigger: section,
+                    start: "top top",
+                    onEnter: () => makeBubbles(p, i),
+                    onEnterBack: () => {
+                        if (i <= 6) {
+                            gsap.to('.bubbles', {
+                                opacity: 1
+                            })
+                        }
+                    },
+                    onLeave: () => {
+                        hideText(p)
+                        if (i == 0) {
+                            gsap.to('.rays', {
+                                opacity: 0,
+                                y: -500,
+                                duration: 8,
+                                ease: 'power4.in'
+                            })
+                        }
+                    },
+                    onLeaveBack: () => hideText(p),
+                    onUpdate: (self) => rotateFish(self)
+                })
         })
 
     }, []);
@@ -222,7 +187,6 @@ const Parcours = () => {
     //  FIN CODE JS 
     return (
         <div className="parcours-animation">
-            <Fromage />
             <p className="indicator">
                 <span>Scroll</span>
                 <span>↓</span>
@@ -273,27 +237,28 @@ const Parcours = () => {
                     <div className="lights__light"></div>
                 </div>
             </div>
+
+            {/* SECTIONS A METTRE */}
+            <div class="content">
+                
+                <section>
+                <SecondScene /> 
+                    
+                </section>
+
+                <section>
+                    <div class="section__content">
+                        {/* SECTIONS A METTRE */}
+                    </div>
+                </section>
+                {/* SECTIONS A METTRE */}
+
+                <section>
+
+                </section>
+                <section>
                     {/* SECTIONS A METTRE */}
-            <div className="content">
-                <section>
-                    <Fromage />
-                </section>
 
-
-                <section>
-                    <div className="section__content">
-                       {/* SECTIONS A METTRE */}
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>Your eyes...</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>they turn me...</p>
-                    </div>
                 </section>
                 <section>
                     <div className="section__content">
