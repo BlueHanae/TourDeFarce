@@ -154,31 +154,31 @@ const Parcours = () => {
             const p = section.querySelector('p')
             gsap.to(p, { opacity: 0 }),
 
-            ScrollTrigger.create({
-                trigger: section,
-                start: "top top",
-                onEnter: () => makeBubbles(p, i),
-                onEnterBack: () => {
-                    if (i <= 6) {
-                        gsap.to('.bubbles', {
-                            opacity: 1
-                        })
-                    }
-                },
-                onLeave: () => {
-                    hideText(p)
-                    if (i == 0) {
-                        gsap.to('.rays', {
-                            opacity: 0,
-                            y: -500,
-                            duration: 8,
-                            ease: 'power4.in'
-                        })
-                    }
-                },
-                onLeaveBack: () => hideText(p),
-                onUpdate: (self) => rotateFish(self)
-            })
+                ScrollTrigger.create({
+                    trigger: section,
+                    start: "top top",
+                    onEnter: () => makeBubbles(p, i),
+                    onEnterBack: () => {
+                        if (i <= 6) {
+                            gsap.to('.bubbles', {
+                                opacity: 1
+                            })
+                        }
+                    },
+                    onLeave: () => {
+                        hideText(p)
+                        if (i == 0) {
+                            gsap.to('.rays', {
+                                opacity: 0,
+                                y: -500,
+                                duration: 8,
+                                ease: 'power4.in'
+                            })
+                        }
+                    },
+                    onLeaveBack: () => hideText(p),
+                    onUpdate: (self) => rotateFish(self)
+                })
         })
 
     }, []);
@@ -236,26 +236,23 @@ const Parcours = () => {
                     <div class="lights__light"></div>
                 </div>
             </div>
-                    {/* SECTIONS A METTRE */}
+            {/* SECTIONS A METTRE */}
             <div class="content">
                 <section>
-                <TourEiffelScene />
+                    <TourEiffelScene />
                 </section>
 
                 <section>
                     <div class="section__content">
-                       {/* SECTIONS A METTRE */}
+                        {/* SECTIONS A METTRE */}
                     </div>
                 </section>
-                       {/* SECTIONS A METTRE */}
+                {/* SECTIONS A METTRE */}
 
                 <section>
-                    
-
                 </section>
                 <section>
-                       {/* SECTIONS A METTRE */}
-                
+                    {/* SECTIONS A METTRE */}
                 </section>
                 <section>
                     <div class="section__content">
