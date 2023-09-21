@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
 // Importer les images
-import tourEiffelImg from '../../assets/croissant.png'; // Mettez à jour le chemin d'accès en conséquence
-import arbreImg from '../../assets/joconde.png'; 
+import tourEiffelImg from '../../assets/scene1.jpeg'; 
 
 const TourEiffelScene = () => {
 
@@ -17,10 +16,6 @@ const TourEiffelScene = () => {
             <div className="eiffel">
                 <img src={tourEiffelImg} alt="Tour Eiffel" />
             </div>
-            <div className="tree">
-                <img src={arbreImg} alt="Arbre" />
-            </div>
-            {/* Ajoutez d'autres éléments et animations ici */}
         </div>
     );
 }
