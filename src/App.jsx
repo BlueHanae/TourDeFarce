@@ -1,7 +1,4 @@
-
 import Loader from './Loader/Loader';
-import Footer from "./footer/footer";
-import Parcours from './Parcours/Parcours';
 
 import './App.scss';
 
@@ -11,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      <Parcours />
-      <Footer />
+
     </div>
   );
 }
