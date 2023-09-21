@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import Fromage from './Fromage/Fromage';
 import TourEiffelScene from './/FirstScene/TourEiffeil';
+import SecondScene from './SecondScene/SecondScene';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -186,11 +187,11 @@ const Parcours = () => {
     //  FIN CODE JS 
     return (
         <div className="parcours-animation">
-        <TourEiffelScene />
-        <p className="indicator">
-          <span>Scroll</span>
-          <span>↓</span>
-        </p>
+            <TourEiffelScene />
+            <p className="indicator">
+                <span>Scroll</span>
+                <span>↓</span>
+            </p>
             <div class="cheese-wrapper">
                 <div class="fish">
                     <div class="cheese__skeleton"></div>
@@ -239,7 +240,9 @@ const Parcours = () => {
             </div>
             {/* SECTIONS A METTRE */}
             <div class="content">
+
                 <section>
+                    <SecondScene />
                 </section>
 
                 <section>
