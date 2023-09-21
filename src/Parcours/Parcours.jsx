@@ -187,6 +187,7 @@ const Parcours = () => {
     //  FIN CODE JS 
     return (
         <div className="parcours-animation">
+            <TourEiffelScene />
             <p className="indicator">
                 <span>Scroll</span>
                 <span>↓</span>
@@ -240,10 +241,9 @@ const Parcours = () => {
 
             {/* SECTIONS A METTRE */}
             <div class="content">
-                
+
                 <section>
-                <SecondScene /> 
-                    
+                    <SecondScene />
                 </section>
 
                 <section>
