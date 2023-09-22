@@ -1,11 +1,9 @@
 const frMessages = {
-    header: {
-        logoAlt: "Logo TourDeFarce",
-        home: "Accueil",
-        regions: "Régions",
-        cliches: "Clichés",
-        contact: "Contact",
+    section: {
+        barthez: "BARTHEZ À LA COUPE DU MONDE 1998",
     },
+
+    
     footer: {
         copyright: "© 2023 TourDeFarce. Aucun droit réservés.",
     },

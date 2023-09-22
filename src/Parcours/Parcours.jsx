@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import Fromage from './Fromage/Fromage';
 import TourEiffelScene from './/FirstScene/TourEiffeil';
 import SecondScene from './SecondScene/SecondScene';
 import ThirdScene from './ThirdScene/ThirdScene';
@@ -219,14 +218,6 @@ const Parcours = () => {
                 </div>
             </div>
 
-            <div className="bubbles">
-                <div className="bubbles__inner">
-                    <div className="bubbles__bubble"></div>
-                    <div className="bubbles__bubble"></div>
-                    <div className="bubbles__bubble"></div>
-                </div>
-            </div>
-
             <div className="rays"><div data-rays></div></div>
 
             <div className="lights">
@@ -265,36 +256,6 @@ const Parcours = () => {
                 </section>
                 <section>
                     <FifthScene />
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>I follow to the edge of the earth</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>and fall off</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>I get eaten by the worms</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>and weird fishes</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>Hit the bottom and escape</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>escape</p>
-                    </div>
                 </section>
             </div>
         </div>
