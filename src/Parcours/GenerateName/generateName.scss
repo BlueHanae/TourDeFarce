@@ -1,0 +1,53 @@
+.generate-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(to right, #0055A4, #FFF, #EF4135); /* Gradient de bleu, blanc et rouge */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  /* Cette règle assure que le bouton n'aura pas de fond translucide */
+  button {
+    position: relative;
+  }
+}
+
+button {
+  background-color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 5;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.random-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
