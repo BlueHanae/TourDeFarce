@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import './ThirdScene.scss';
 
 function ThirdScene() {
@@ -30,10 +31,12 @@ useEffect(() =>{
   
   }, [])
     return (
-        <div className='ThirdScene'>
-            <img id='jacquesbrel' className='animate' src="/src/assets/Jak.png" alt="Jacques Brel" />
-            <img id='zizou' src="/src/assets/Zizou.png" className='animate' alt="zizou le meilleur chauve" />
-        </div>
+      <div className='ThirdScene'>
+      <img id='jacquesbrel' className='animate' src="/src/assets/Jak.png" alt="Jacques Brel" />
+  
+      <p className='image-text'>BARTHEZ À LA COUPE DU MONDE 1998</p>
+      <img id='zizou' src="/src/assets/Zizou.png" className='animate' alt="zizou le meilleur chauve" />
+  </div>
     );
 }
 

@@ -1,27 +1,49 @@
-.ThirdScene{
-    img{
-        width: 30rem;
-    }
-    #jacquesbrel{
-        position: absolute;
-        left: -30%;
-    }
-    #zizou{
-        position: absolute;
-        right: -30%;
-    }
-    .animate {
-        animation: animate 0.8s linear infinite;
-      }
-      @keyframes animate {
-        0% {
-          transform: translateX(0) rotate(0deg); 
-        }
-        50% {
-          transform: translateX(20px) rotate(15deg);
-        }
-        100% {
+@import '../../var.scss';
+
+.ThirdScene {
+  position: relative;
+  text-align: center;
+
+  .image-text {
+      color: $bittersweet; 
+      font-size: 44px; 
+      font-weight: bold;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      margin-top: -100px;
+  }
+
+  img {
+      width: 30rem;
+      z-index: 1;
+  }
+
+  #jacquesbrel {
+      position: absolute;
+      left: -30%;
+  }
+
+  #zizou {
+      position: absolute;
+      right: -30%;
+  }
+
+  .animate {
+      animation: animate 0.8s linear infinite;
+  }
+
+  @keyframes animate {
+      0% {
           transform: translateX(0) rotate(0deg);
-        }
       }
+      50% {
+          transform: translateX(20px) rotate(15deg);
+      }
+      100% {
+          transform: translateX(0) rotate(0deg);
+      }
+  }
 }
