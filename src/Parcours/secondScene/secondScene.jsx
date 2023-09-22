@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama'; 
-import sceneParis from "../../assets/scene1.jpeg"
+import sceneParis from "../../assets/scene1.jpeg";
+import cyclisteImg from "../../assets/cycliste.png";
 
 const SecondScene = () => {
   const [stepData, setStepData] = useState({
     currentStep: 0,
     steps: [
       { id: 'start', offset: 0.2 },
-      { id: 'end', offset: 0.8 },
     ],
   });
 
   const handleStepEnter = ({ data }) => {
     setStepData({ ...stepData, currentStep: data });
   };
-
+  
   useEffect(() => {
     // Add your animation logic here based on stepData.currentStep
   }, [stepData.currentStep]);
-
+  
   return (
     <section>
       <Scrollama onStepEnter={handleStepEnter} offset={0.7}>
@@ -37,6 +37,9 @@ const SecondScene = () => {
                   }}
                 />
               )}
+                  <div class="sliderInit d-flex">
+                    <img className='cyclist' src={cyclisteImg} alt="cycliste" />
+                  </div>
             </div>
           </Step>
         ))}

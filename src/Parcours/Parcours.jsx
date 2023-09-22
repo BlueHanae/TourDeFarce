@@ -2,14 +2,18 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import Fromage from './Fromage/Fromage';
 import TourEiffelScene from './/FirstScene/TourEiffeil';
 import SecondScene from './SecondScene/SecondScene';
+import ThirdScene from './ThirdScene/ThirdScene';
+import FourthScene from './FourthScene/FourthScene';
+import FifthScene from './FifthScene/FifthScene';
+
 import GenerateName from './GenerateName/generateName';
+
 import './Parcours.scss';
 
 const Parcours = () => {
-    
+
     //  DÉBUT CODE JS 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -217,14 +221,6 @@ const Parcours = () => {
                 </div>
             </div>
 
-            <div className="bubbles">
-                <div className="bubbles__inner">
-                    <div className="bubbles__bubble"></div>
-                    <div className="bubbles__bubble"></div>
-                    <div className="bubbles__bubble"></div>
-                </div>
-            </div>
-
             <div className="rays"><div data-rays></div></div>
 
             <div className="lights">
@@ -242,59 +238,18 @@ const Parcours = () => {
 
             {/* SECTIONS A METTRE */}
             <div class="content">
-
                 <section>
                     <SecondScene />
                 </section>
-
-                <section>
-                    <div class="section__content">
-                        {/* SECTIONS A METTRE */}
-                    </div>
-                </section>
-                {/* SECTIONS A METTRE */}
                 <GenerateName />
                 <section>
-
+                    <ThirdScene />
                 </section>
                 <section>
-                    {/* SECTIONS A METTRE */}
-
+                    <FourthScene />
                 </section>
                 <section>
-                    <div className="section__content">
-                        <p>turn me on to phantoms</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>I follow to the edge of the earth</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>and fall off</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>I get eaten by the worms</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>and weird fishes</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>Hit the bottom and escape</p>
-                    </div>
-                </section>
-                <section>
-                    <div className="section__content">
-                        <p>escape</p>
-                    </div>
+                    <FifthScene />
                 </section>
             </div>
         </div>

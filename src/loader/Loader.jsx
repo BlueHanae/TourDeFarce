@@ -2,7 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import "../Loader/Loader.scss";
 import croissant from "../assets/croissant.png"
-import Footer from "../footer/footer";
 import Parcours from '../Parcours/Parcours';
 
 function Loader() {
