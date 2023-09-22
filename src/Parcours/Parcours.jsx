@@ -6,6 +6,8 @@ import Fromage from './Fromage/Fromage';
 import TourEiffelScene from './/FirstScene/TourEiffeil';
 import SecondScene from './SecondScene/SecondScene';
 import ThirdScene from './ThirdScene/ThirdScene';
+import FourthScene from './FourthScene/FourthScene';
+import FifthScene from './FifthScene/FifthScene';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -258,13 +260,11 @@ const Parcours = () => {
                     <ThirdScene />
                 </section>
                 <section>
-                    {/* SECTIONS A METTRE */}
+                    <FourthScene />
 
                 </section>
                 <section>
-                    <div className="section__content">
-                        <p>turn me on to phantoms</p>
-                    </div>
+                    <FifthScene />
                 </section>
                 <section>
                     <div className="section__content">
