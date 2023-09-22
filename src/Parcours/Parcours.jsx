@@ -5,6 +5,7 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import Fromage from './Fromage/Fromage';
 import TourEiffelScene from './/FirstScene/TourEiffeil';
 import SecondScene from './SecondScene/SecondScene';
+import ThirdScene from './ThirdScene/ThirdScene';
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -254,7 +255,7 @@ const Parcours = () => {
                 {/* SECTIONS A METTRE */}
 
                 <section>
-
+                    <ThirdScene />
                 </section>
                 <section>
                     {/* SECTIONS A METTRE */}
