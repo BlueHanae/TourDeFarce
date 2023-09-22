@@ -7,6 +7,9 @@ import SecondScene from './SecondScene/SecondScene';
 import ThirdScene from './ThirdScene/ThirdScene';
 import FourthScene from './FourthScene/FourthScene';
 import FifthScene from './FifthScene/FifthScene';
+
+import GenerateName from './GenerateName/generateName';
+
 import './Parcours.scss';
 
 const Parcours = () => {
@@ -246,7 +249,7 @@ const Parcours = () => {
                     </div>
                 </section>
                 {/* SECTIONS A METTRE */}
-
+                <GenerateName />
                 <section>
                     <ThirdScene />
                 </section>
