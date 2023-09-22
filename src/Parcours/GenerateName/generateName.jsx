@@ -7,7 +7,7 @@ const GenerateName = () => {
 
   // Fonction pour obtenir un nom aléatoire depuis le back-end
   const getRandomName = () => {
-    fetch('https://tdf-mywa6xwzu-steiningermaxime.vercel.app/api/generate-name.js')
+    fetch('https://tdf-9qchqeltz-steiningermaxime.vercel.app/api/generate-name.js')
       .then(response => response.json())
       .then(data => {
         console.log(data);
