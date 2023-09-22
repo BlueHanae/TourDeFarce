@@ -13,7 +13,7 @@ import GenerateName from './GenerateName/generateName';
 import './Parcours.scss';
 
 const Parcours = () => {
-    
+
     //  DÉBUT CODE JS 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -238,24 +238,15 @@ const Parcours = () => {
 
             {/* SECTIONS A METTRE */}
             <div class="content">
-
                 <section>
                     <SecondScene />
                 </section>
-
-                <section>
-                    <div class="section__content">
-                        {/* SECTIONS A METTRE */}
-                    </div>
-                </section>
-                {/* SECTIONS A METTRE */}
                 <GenerateName />
                 <section>
                     <ThirdScene />
                 </section>
                 <section>
                     <FourthScene />
-
                 </section>
                 <section>
                     <FifthScene />
