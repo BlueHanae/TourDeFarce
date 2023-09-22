@@ -241,7 +241,9 @@ const Parcours = () => {
                 <section>
                     <SecondScene />
                 </section>
+                <section>
                 <GenerateName />
+                </section>
                 <section>
                     <ThirdScene />
                 </section>
